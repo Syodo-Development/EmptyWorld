@@ -38,16 +38,16 @@
       <name>nukkitx-releases</name>
       <url>https://repo.nukkitx.com/release</url>
     </repository>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+    <repository>
+      <id>storehouse</id>
+      <name>storehouse snapshots</name>
+      <url>https://storehouse.okaeri.eu/repository/maven-public</url>
+    </repository>
   </repositories>
-  <dependencies>
-    <dependency>
-      <groupId>cn.powernukkitx</groupId>
-      <artifactId>powernukkitx-full</artifactId>
-      <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/libs/powernukkitx-full.jar</systemPath>
-    </dependency>
-  </dependencies>
   <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
