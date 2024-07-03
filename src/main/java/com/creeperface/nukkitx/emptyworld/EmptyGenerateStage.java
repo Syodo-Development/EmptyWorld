@@ -27,5 +27,6 @@ public class EmptyGenerateStage extends GenerateStage {
             }
         }
         chunk.setChunkState(ChunkState.POPULATED);
+        chunk.populateSkyLight();
     }
 };
