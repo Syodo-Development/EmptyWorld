@@ -6,7 +6,7 @@
 
     <groupId>com.creeperface.nukkitx.emptyworld</groupId>
     <artifactId>emptyworld</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -15,25 +15,35 @@
 
     <repositories>
         <repository>
-            <id>releases</id>
-            <name>nukkitx-releases</name>
-            <url>https://repo.nukkitx.com/release</url>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>       <repository>
-        <id>storehouse</id>
-        <name>storehouse snapshots</name>
-        <url>https://storehouse.okaeri.eu/repository/maven-public</url>
-    </repository>
+            <url>https://www.jitpack.io</url>
+        </repository>
+        <repository>
+            <id>opencollab-repository-maven-releases</id>
+            <name>Opencollab Repository releases</name>
+            <url>https://repo.opencollab.dev/maven-releases</url>
+        </repository>
+        <repository>
+            <id>opencollab-repository-maven-snapshots</id>
+            <name>Opencollab Repository snapshots</name>
+            <url>https://repo.opencollab.dev/maven-snapshots</url>
+        </repository>
+        <repository>
+            <id>PowerNukkitX-releases</id>
+            <name>PowerNukkitX Repository</name>
+            <url>https://repo.powernukkitx.org/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>com.github.PowerNukkitX</groupId>
-            <artifactId>PowerNukkitX</artifactId>
-            <version>1022d7ff0f</version>
+            <groupId>org.powernukkitx</groupId>
+            <artifactId>server</artifactId>
+            <version>b-migration-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 </dependencies>
@@ -67,5 +77,15 @@
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources</directory>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 </project>

@@ -1,13 +1,10 @@
 package com.creeperface.nukkitx.emptyworld;
 
-import cn.nukkit.Server;
 import cn.nukkit.level.DimensionData;
 import cn.nukkit.level.generator.GenerateStage;
 import cn.nukkit.level.generator.Generator;
 import cn.nukkit.level.generator.stages.FinishedStage;
-import cn.nukkit.level.generator.stages.FlatGenerateStage;
 import cn.nukkit.level.generator.stages.LightPopulationStage;
-import cn.nukkit.math.Vector3;
 import cn.nukkit.registry.Registries;
 
 import java.util.Map;

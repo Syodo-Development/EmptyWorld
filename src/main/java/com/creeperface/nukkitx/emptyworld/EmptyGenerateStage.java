@@ -10,7 +10,6 @@ import cn.nukkit.level.generator.GenerateStage;
 public class EmptyGenerateStage extends GenerateStage {
     public static final String NAME = "empty_generatestage";
 
-    static final BlockState air = BlockAir.PROPERTIES.getDefaultState();
     @Override
     public String name() {
         return NAME;
@@ -26,7 +25,6 @@ public class EmptyGenerateStage extends GenerateStage {
                 }
             }
         }
-        chunk.setChunkState(ChunkState.POPULATED);
-        chunk.populateSkyLight();
+        chunk.setChunkState(ChunkState.GENERATED);
     }
 };

@@ -4,9 +4,7 @@ import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.registry.RegisterException;
 import cn.nukkit.registry.Registries;
 
-/**
- * Created by CreeperFace on 16. 11. 2016.
- */
+
 public class EmptyWorld extends PluginBase {
 
     @Override
