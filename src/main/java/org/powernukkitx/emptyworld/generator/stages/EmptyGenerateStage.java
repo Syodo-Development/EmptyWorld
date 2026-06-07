@@ -1,7 +1,5 @@
-package com.creeperface.nukkitx.emptyworld;
+package org.powernukkitx.emptyworld.generator.stages;
 
-import cn.nukkit.block.*;
-import cn.nukkit.level.biome.BiomeID;
 import cn.nukkit.level.format.ChunkState;
 import cn.nukkit.level.format.IChunk;
 import cn.nukkit.level.generator.ChunkGenerateContext;
@@ -18,13 +16,6 @@ public class EmptyGenerateStage extends GenerateStage {
     @Override
     public void apply(ChunkGenerateContext chunkGenerateContext) {
         IChunk chunk = chunkGenerateContext.getChunk();
-        for (int x = 0; x < 16; x++) {
-            for (int z = 0; z < 16; z++) {
-                for (int i = chunkGenerateContext.getGenerator().getDimensionData().getMinSectionY(); i < chunkGenerateContext.getGenerator().getDimensionData().getMinSectionY(); i++) {
-                    chunk.setBiomeId(x, i, z, BiomeID.JUNGLE);
-                }
-            }
-        }
         chunk.setChunkState(ChunkState.GENERATED);
     }
 };

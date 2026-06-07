@@ -1,6 +1,6 @@
 name: EmptyWorld
 version: "${pom.version}"
 api: ["3.0.0"]
-main: com.creeperface.nukkitx.emptyworld.EmptyWorld
-author: "CreeperFace"
-description: "EmptyWorld generator"
+main: org.powernukkitx.emptyworld.EmptyWorld
+author: "Buddelbubi"
+description: "An empty world generator for PowerNukkitX"
