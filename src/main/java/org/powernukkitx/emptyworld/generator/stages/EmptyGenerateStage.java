@@ -1,9 +1,9 @@
 package org.powernukkitx.emptyworld.generator.stages;
 
-import cn.nukkit.level.format.ChunkState;
-import cn.nukkit.level.format.IChunk;
-import cn.nukkit.level.generator.ChunkGenerateContext;
-import cn.nukkit.level.generator.GenerateStage;
+import org.powernukkitx.level.format.ChunkState;
+import org.powernukkitx.level.format.IChunk;
+import org.powernukkitx.level.generator.ChunkGenerateContext;
+import org.powernukkitx.level.generator.GenerateStage;
 
 public class EmptyGenerateStage extends GenerateStage {
     public static final String NAME = "empty_generatestage";

@@ -1,12 +1,12 @@
 package org.powernukkitx.emptyworld.generator.stages;
 
-import cn.nukkit.block.BlockBedrock;
-import cn.nukkit.level.format.IChunk;
-import cn.nukkit.level.generator.ChunkGenerateContext;
-import cn.nukkit.level.generator.GenerateStage;
+import org.powernukkitx.block.BlockBedrock;
+import org.powernukkitx.level.format.IChunk;
+import org.powernukkitx.level.generator.ChunkGenerateContext;
+import org.powernukkitx.level.generator.GenerateStage;
 import org.powernukkitx.emptyworld.generator.holder.EmptyObjectHolder;
 
-import static cn.nukkit.level.generator.stages.normal.NormalTerrainStage.SEA_LEVEL;
+import static org.powernukkitx.level.generator.stages.normal.NormalTerrainStage.SEA_LEVEL;
 
 public class EmptyBlockStage extends GenerateStage {
 

@@ -1,6 +1,6 @@
 package org.powernukkitx.emptyworld.generator.holder;
 
-import cn.nukkit.level.generator.holder.ObjectHolder;
+import org.powernukkitx.level.generator.holder.ObjectHolder;
 import lombok.Getter;
 
 @Getter
